@@ -5,6 +5,7 @@ import ResturantItem from './src/component/ResturantItem';
 import restaurant from './assets/data/restaurants.json';
 import HomeScreen from './src/screens/HomeScreen';
 import RestautantDetailPage from './src/screens/RestaurantDetailScreen';
+import DishDetailsScreen from './src/screens/DishDetailScreen';
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       {/* <ResturantItem restaurants={restaurants[0]}/>
       <ResturantItem restaurants={restaurants[1]}/> */}
           {/* <HomeScreen/>     */}
-          <RestautantDetailPage/>
+          {/* <RestautantDetailPage/> */}
+          <DishDetailsScreen/>
           <StatusBar style='light'/>
     </View>
   )
