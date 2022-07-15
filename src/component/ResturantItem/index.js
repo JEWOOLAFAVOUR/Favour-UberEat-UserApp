@@ -9,10 +9,12 @@ const ResturantItem = ({restaurant}) => {
                 uri: restaurant.image
             }}
             style={styles.image}/>
-            <Text style={styles.title}>{restaurant.name}</Text>
-            <Text style={styles.subTitle}>
-              $ ${restaurant.deliveryFee} 
-            {restaurant.minDeliveryTime}-{restaurant.maxDeliveryTime} minutes</Text>
+            <View>
+              <Text style={styles.title}>{restaurant.name}</Text>
+              <Text style={styles.subTitle}>
+                $ ${restaurant.deliveryFee} &#8226; {restaurant.minDeliveryTime}-
+                {restaurant.maxDeliveryTime} minutes</Text>
+            </View>
         </View>
     )
   }
