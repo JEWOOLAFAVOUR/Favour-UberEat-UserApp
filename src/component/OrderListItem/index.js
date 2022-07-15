@@ -1,10 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
 
-const OrderListItem = () => {
+const OrderListItem = ({order}) => {
   return (
-    <View>
-      <Text>OrderListItem</Text>
+    <View style={{flexDirection:'row', margin: 10, alignItems: 'center'}}>
+      <Image source={{uri: order.Restaurant.image}}
+        style={{width: 75, height: 75, marginRight: 5}}
+        />
+        <View>
+            <Text style={{fontWeight: '400', fontSize: 16,}}>
+                {order.Restaurant.name}</Text>
+            <Text style={{marginVertical: 5}}>3 item &#8226; $38.45</Text>
+            <Text>2 days ago &#8226; {order.status} </Text>
+        </View>
     </View>
   )
 }

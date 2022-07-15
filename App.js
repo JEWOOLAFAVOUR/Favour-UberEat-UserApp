@@ -8,6 +8,7 @@ import RestautantDetailPage from './src/screens/RestaurantDetailScreen';
 import DishDetailsScreen from './src/screens/DishDetailScreen';
 import Basket from './src/screens/Basket';
 import OrderScreen from './src/screens/OrderScreen';
+import OrderDetails from './src/screens/OrderDetails';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
           {/* <RestautantDetailPage/> */}
           {/* <DishDetailsScreen/> */}
           {/* <Basket/> */}
-          <OrderScreen/>
+          {/* <OrderScreen/> */}
+          <OrderDetails/>
           <StatusBar style='light'/>
     </View>
   )
