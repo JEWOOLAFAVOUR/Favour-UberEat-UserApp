@@ -1,12 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native'
 
-const ResturantItem = ({title}) => {
+const ResturantItem = ({restaurant}) => {
     return(
       <View style={styles.restaurantContainer}>
-          <Image source={require('../../../assets/uberimage/restaurant1.jpeg')}
+          <Image 
+            source={{
+                uri: restaurant.image
+            }}
             style={styles.image}/>
-            <Text style={styles.title}>{title}</Text>
+            <Text style={styles.title}>{restaurant.name}</Text>
             <Text style={styles.subTitle}>$ $1.99 15-30 minutes</Text>
         </View>
     )

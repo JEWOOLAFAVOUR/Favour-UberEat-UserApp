@@ -7,8 +7,8 @@ const App = () => {
   return (
     <View style={styles.container}>
       {/* Resturant Item */}
-      <ResturantItem title="First Resturant"/>
-      <ResturantItem title="Second Resturant"/>
+      <ResturantItem restaurant={restaurant[0]}/>
+      <ResturantItem restaurant={restaurant[1]}/>
     </View>
   )
 }
