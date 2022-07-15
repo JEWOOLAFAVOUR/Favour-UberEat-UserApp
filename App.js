@@ -1,10 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ResturantItem from './src/component/ResturantItem';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>App</Text>
+      {/* Resturant Item */}
+      <ResturantItem/>
+      <ResturantItem/>
     </View>
   )
 }
@@ -14,8 +17,9 @@ export default App;
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    backgroundColor: '#',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 10
   },
 });
