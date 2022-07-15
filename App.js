@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import ResturantItem from './src/component/ResturantItem';
 import restaurant from './assets/data/restaurants.json';
+import HomeScreen from './src/screens/HomeScreen';
 
 const App = () => {
   return (
@@ -10,12 +11,7 @@ const App = () => {
       {/* Resturant Item */}
       {/* <ResturantItem restaurants={restaurants[0]}/>
       <ResturantItem restaurants={restaurants[1]}/> */}
-
-      <FlatList
-        data={restaurant}
-        renderItem={({item})=><ResturantItem restaurant={item}/>}
-          showsVerticalScrollIndicator={false}
-          />      
+          <HomeScreen/>    
           <StatusBar style='auto'/>
     </View>
   )
