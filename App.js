@@ -6,6 +6,8 @@ import restaurant from './assets/data/restaurants.json';
 import HomeScreen from './src/screens/HomeScreen';
 import RestautantDetailPage from './src/screens/RestaurantDetailScreen';
 import DishDetailsScreen from './src/screens/DishDetailScreen';
+import Basket from './src/screens/Basket';
+import OrderScreen from './src/screens/OrderScreen';
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
       <ResturantItem restaurants={restaurants[1]}/> */}
           {/* <HomeScreen/>     */}
           {/* <RestautantDetailPage/> */}
-          <DishDetailsScreen/>
+          {/* <DishDetailsScreen/> */}
+          {/* <Basket/> */}
+          <OrderScreen/>
           <StatusBar style='light'/>
     </View>
   )
