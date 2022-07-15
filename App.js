@@ -12,7 +12,7 @@ const App = () => {
       {/* Resturant Item */}
       {/* <ResturantItem restaurants={restaurants[0]}/>
       <ResturantItem restaurants={restaurants[1]}/> */}
-          <HomeScreen/>    
+          {/* <HomeScreen/>     */}
           <RestautantDetailPage/>
           <StatusBar style='auto'/>
     </View>
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   container:{
     flex: 1,
     backgroundColor: '#fff',
-    padding: 10,
-    paddingVertical: 30,
+  // padding: 10,
+  //   paddingVertical: 30,  
   },
 });

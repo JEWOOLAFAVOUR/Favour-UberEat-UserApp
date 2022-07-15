@@ -5,6 +5,7 @@ import restaurant from '../../../assets/data/restaurants.json';
 
 const HomeScreen = () => {
   return (
+    
       <FlatList
         data={restaurant}
         renderItem={({item})=><ResturantItem restaurant={item}/>}
