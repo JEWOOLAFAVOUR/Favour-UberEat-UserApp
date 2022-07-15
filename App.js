@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 const App = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>App</Text>
     </View>
   )
@@ -11,4 +11,11 @@ const App = () => {
 
 export default App;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container:{
+    flex: 1,
+    backgroundColor: '#',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
