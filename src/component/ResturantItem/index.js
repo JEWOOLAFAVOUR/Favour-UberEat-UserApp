@@ -10,7 +10,7 @@ const ResturantItem = ({restaurant}) => {
             }}
             style={styles.image}/>
             <Text style={styles.title}>{restaurant.name}</Text>
-            <Text style={styles.subTitle}>$ $1.99 15-30 minutes</Text>
+            <Text style={styles.subTitle}>$ ${restaurant.deliveryFee} {restaurant.minDeliveryTime}-{restaurant.maxDeliveryTime} minutes</Text>
         </View>
     )
   }
