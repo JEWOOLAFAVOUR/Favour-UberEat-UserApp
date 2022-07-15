@@ -25,4 +25,9 @@ export default StyleSheet.create({
         color: '#525252',
         fontSize: 15,
     },
+    menuTitle:{
+        marginVertical: 10,
+        fontSize: 18,
+        letterSpacing: 0.5,
+    },
 });

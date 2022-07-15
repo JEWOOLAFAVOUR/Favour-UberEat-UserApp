@@ -1,6 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
-import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
+import { View, FlatList } from 'react-native';
 import restaurants from "../../../assets/data/restaurants.json"
 import DishListItem from '../../component/DIshListItem';
 import Header from './Header';
