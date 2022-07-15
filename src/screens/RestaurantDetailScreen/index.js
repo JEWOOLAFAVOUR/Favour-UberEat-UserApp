@@ -2,6 +2,7 @@ import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import restaurants from "../../../assets/data/restaurants.json"
+import DishListItem from '../../component/DIshListItem';
 
 const restaurant= restaurants[0]
 const RestautantDetailPage = () => {
@@ -17,6 +18,11 @@ const RestautantDetailPage = () => {
         $ ${restaurant.deliveryFee} &#8226; {restaurant.minDeliveryTime}-
         {restaurant.maxDeliveryTime} minutes</Text>    
     </View>
+    {/* <DishListItem dish={restaurant.dishes[0]}/>
+    <DishListItem dish={restaurant.dishes[2]}/> */}
+    <FlatList data={restaurant.dishes}
+        renderItem={({item})=><DishListItem dish={item}/>}
+    />
     </View>
   )
 }
@@ -37,7 +43,7 @@ const styles = StyleSheet.create({
     iconContainer:{
         position: 'absolute',
         top: 50,
-        left: 20,
+        left: 10,
     },
     title:{
         fontSize: 35,

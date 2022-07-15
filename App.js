@@ -14,7 +14,7 @@ const App = () => {
       <ResturantItem restaurants={restaurants[1]}/> */}
           {/* <HomeScreen/>     */}
           <RestautantDetailPage/>
-          <StatusBar style='auto'/>
+          <StatusBar style='light'/>
     </View>
   )
 }
