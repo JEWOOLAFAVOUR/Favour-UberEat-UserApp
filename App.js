@@ -9,7 +9,7 @@ const App = () => {
     <NavigationContainer>
     <View style={styles.container}>
         <RootNavigator/>
-          <StatusBar style='auto'/>
+          <StatusBar style='light'/>
     </View>
     </NavigationContainer>
   )
