@@ -1,29 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import ResturantItem from './src/component/ResturantItem';
-import restaurant from './assets/data/restaurants.json';
-import HomeScreen from './src/screens/HomeScreen';
-import RestautantDetailPage from './src/screens/RestaurantDetailScreen';
-import DishDetailsScreen from './src/screens/DishDetailScreen';
-import Basket from './src/screens/Basket';
-import OrderScreen from './src/screens/OrderScreen';
-import OrderDetails from './src/screens/OrderDetails';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './src/navigation';
 
 const App = () => {
   return (
+    <NavigationContainer>
     <View style={styles.container}>
-      {/* Resturant Item */}
-      {/* <ResturantItem restaurants={restaurants[0]}/>
-      <ResturantItem restaurants={restaurants[1]}/> */}
-          {/* <HomeScreen/>     */}
-          {/* <RestautantDetailPage/> */}
-          {/* <DishDetailsScreen/> */}
-          {/* <Basket/> */}
-          {/* <OrderScreen/> */}
-          <OrderDetails/>
-          <StatusBar style='light'/>
+        <RootNavigator/>
+          <StatusBar style='auto'/>
     </View>
+    </NavigationContainer>
   )
 }
 

@@ -7,7 +7,7 @@ const BasketDishItem = ({basketDish}) => {
         <Text>1</Text>
       </View>
       <Text style={{fontWeight: '600',}}>{basketDish.name}</Text>
-      <Text style={{marginLeft: 'auto'}}>${basketDish.price}</Text>
+      <Text style={{marginLeft: 'auto'}}>$ {basketDish.price}</Text>
       </View>
       
     )

@@ -3,7 +3,10 @@ import { FlatList, StyleSheet, Text, View } from 'react-native';
 import restaurants from '../../../assets/data/restaurants.json';
 import { AntDesign } from '@expo/vector-icons';
 import DishListItem from '../../component/DIshListItem';
+import BasketDishItem from '../../component/BasketDishItem';
+
 const restaurant = restaurants[0];
+
 
 
 const Basket = () => {
