@@ -27,8 +27,7 @@ const Tab = createMaterialBottomTabNavigator();
 
 const HomeTab = () => {
     return(
-        <Tab.Navigator 
-            screenOptions={{tabBarStyle: {backgroundColor: "white"}}}>
+        <Tab.Navigator barStyle={{backgroundColor: "white"}}>
             <Tab.Screen name='Home' component={HomeScreen}
                 options={{tabBarIcon: ({color})=> (
                 <Foundation name="home" size={24} color={color} 
