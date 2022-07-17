@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View, Pressable } from 'react-native';
 import restaurants from '../../../assets/data/restaurants.json';
 import { AntDesign } from '@expo/vector-icons';
 import DishListItem from '../../component/DIshListItem';
 import BasketDishItem from '../../component/BasketDishItem';
+import { useNavigation } from '@react-navigation/native';
 
 const restaurant = restaurants[0];
 

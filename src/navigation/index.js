@@ -5,20 +5,18 @@ import HomeScreen from '../screens/HomeScreen';
 // import ResturantItem from './src/component/ResturantItem';
 // import restaurant from './assets/data/restaurants.json';
 import RestautantDetailPage from '../screens/RestaurantDetailScreen';
-// import DishDetailsScreen from './src/screens/DishDetailScreen';
-// import Basket from './src/screens/Basket';
+import DishDetailsScreen from '../screens/DishDetailScreen';
+import Basket from '../screens/Basket';
 import OrderScreen from '../screens/OrderScreen';
-// import OrderDetails from './src/screens/OrderDetails';
+import OrderDetails from '../screens/OrderDetails';
 
 const Stack = createNativeStackNavigator();
 
 const RootNavigator = () => {
     return(
         // <Stack.Navigator initialRouteName="Restaurant">
-        <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen}/>
-            <Stack.Screen name="Restaurant" component={RestautantDetailPage} 
-                options={{headerShown: false}}/>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+            <Stack.Screen name="HomeTabs" component={HomeTab}/>
         </Stack.Navigator>
     )
 }
@@ -28,7 +26,7 @@ const Tab = createMaterialBottomTabNavigator();
 const HomeTab = () => {
     return(
         <Tab.Navigator barStyle={{backgroundColor: "white"}}>
-            <Tab.Screen name='Home' component={HomeScreen}
+            <Tab.Screen name='Home' component={HomeStackNavigator}
                 options={{tabBarIcon: ({color})=> (
                 <Foundation name="home" size={24} color={color} 
                 />)}}/>
@@ -44,6 +42,18 @@ const HomeTab = () => {
     )
 }
 
-export default HomeTab
+const HomeStack = createNativeStackNavigator();
 
-// export default RootNavigator;
+const HomeStackNavigator = () => {
+    return(
+        <HomeStack.Navigator>
+            <HomeStack.Screen name='Restaurants' component={HomeScreen}/>
+            <HomeStack.Screen name='Restaurant' component={RestautantDetailPage}/>
+            <HomeStack.Screen name='Dish' component={DishDetailsScreen}/>
+            <HomeStack.Screen name='Basket' component={Basket}/>
+        </HomeStack.Navigator>
+    )
+}
+// export default HomeTab
+
+export default RootNavigator;
